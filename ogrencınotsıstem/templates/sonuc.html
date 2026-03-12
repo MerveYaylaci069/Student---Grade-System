@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title>Sonuç</title>
+
+</head>
+
+<body style="background:#f2f2f2">
+
+<div class="container mt-5 text-center">
+
+<h2>📊 Not Sonucu</h2>
+
+<h3>Ortalama: {{ort}}</h3>
+
+{% if durum == "GEÇTİ" %}
+
+<h2 style="color:green">✅ GEÇTİ</h2>
+
+{% else %}
+
+<h2 style="color:red">❌ KALDI</h2>
+
+{% endif %}
+
+<br>
+
+<a href="/" class="btn btn-primary">Yeni Öğrenci</a>
+
+</div>
+
+</body>
+</html>
